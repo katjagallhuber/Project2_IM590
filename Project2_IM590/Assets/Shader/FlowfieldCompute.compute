@@ -1,0 +1,96 @@
+// Each #kernel tells which function/program to compile; you can have many kernels
+#pragma kernel CSFlowfield
+#pragma kernel CSParticles
+
+// Same structure as in script
+struct FlowfieldCell {
+    float2 position;
+    float2 direction;
+    float intensity;
+};
+
+struct Particle {
+    float2 position;
+    float2 direction;
+    float speed;
+};
+
+// Uniforms sent from script 
+uniform float deltaTime;
+uniform float2 simluationSpace;
+uniform float2 simulationPosition;
+uniform int cellCountX;
+uniform int cellCountY;
+
+// Read & write compute buffers
+RWStructuredBuffer<FlowfieldCell> flowfieldBuffer;
+RWStructuredBuffer<Particle> particlesBuffer;
+
+// Get current cell for particle
+int GetCellIndex (float2 position) 
+{
+    float x = floor((position.x - (simulationPosition.x - simluationSpace.x / 2)) / ((simluationSpace.x / cellCountX)));
+    float y = floor((position.y - (simulationPosition.y - simluationSpace.y / 2)) / ((simluationSpace.y / cellCountY)));
+
+    int index = (x * cellCountY + y);
+    return index;
+}
+
+float2 KeepInBoundaries(inout float2 position) 
+{
+    if (position.x > simluationSpace.x / 2)
+    {
+        position.x = -simluationSpace.x / 2;
+    }
+    else if (position.x < -simluationSpace.x / 2)
+    {
+        position.x = simluationSpace.x / 2;
+    }
+    else if (position.y > simluationSpace.y / 2)
+    {
+        position.y = -simluationSpace.y / 2;
+    }
+    else if (position.y < -simluationSpace.y / 2)
+    {
+        position.y = simluationSpace.y / 2;
+    }
+
+    return position;
+}
+
+/* Partitions in work groups, each work group as a number of threads assigned
+   that perform same calculations
+   id -> current thread id
+*/
+[numthreads(256,1,1)]
+void CSFlowfield(uint3 id : SV_DispatchThreadID)
+{
+    int idx = id.x; 
+    FlowfieldCell flowfieldCell = flowfieldBuffer[idx];
+
+    // Assign computed cell to place in buffer
+    flowfieldBuffer[idx] = flowfieldCell;
+}
+
+[numthreads(256, 1, 1)]
+void CSParticles(uint3 id : SV_DispatchThreadID)
+{
+    int idx = id.x;
+    Particle particle = particlesBuffer[idx];
+
+    // Get current cell for particle & direction in cell 
+    int cellIndex = GetCellIndex(particle.position);
+    float2 flowDirection = flowfieldBuffer[cellIndex].direction;
+
+    // rotation for particles direction 
+    float rotation = exp(-2.0 * deltaTime);
+
+    // calculate direction & position for particle based on cell
+    particle.direction = lerp((flowDirection), normalize(particle.direction), rotation);
+    particle.position += particle.direction * (particle.speed * 0.001);
+
+    KeepInBoundaries(particle.position);
+
+    // Assign computed particle to place in buffer
+    particlesBuffer[idx] = particle;
+}
