@@ -392,19 +392,11 @@ Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Tests.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Documentation~/TextMeshPro.md
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Documentation~/TextMeshPro.md.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Textures.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos/TMP - Dropdown Icon.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos/TMP - Font Asset Icon.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos/TMP - Input Field Icon.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos/TMP - Sprite Asset Icon.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Gizmos/TMP - Text Component Icon.psd.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_Properties.cginc
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_Properties.cginc.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_SDF Internal Editor.shader
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_SDF Internal Editor.shader.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_SDF_SSD.cginc
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Shaders/TMP_SDF_SSD.cginc.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Textures/btn_AlignBaseLine.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Textures/btn_AlignBaseLine_Light.psd.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Editor Resources/Textures/btn_AlignBottom.psd.meta
@@ -445,10 +437,6 @@ Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/G
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/GlyphRectPropertyDrawer.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BaseEditorPanel.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BaseEditorPanel.cs.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BaseShaderGUI.cs
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BaseShaderGUI.cs.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BitmapShaderGUI.cs
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_BitmapShaderGUI.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_CharacterPropertyDrawer.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_CharacterPropertyDrawer.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_ColorGradientAssetMenu.cs
@@ -485,8 +473,6 @@ Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/T
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_ProjectTextSettings.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_ResourcesLoader.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_ResourcesLoader.cs.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_SDFShaderGUI.cs
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_SDFShaderGUI.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_SerializedPropertyHolder.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_SerializedPropertyHolder.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_SettingsEditor.cs
@@ -517,8 +503,6 @@ Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/T
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_ContextMenus.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_CreateObjectMenu.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_CreateObjectMenu.cs.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_EditorShaderUtilities.cs
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_EditorShaderUtilities.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_FontPlugin.cs
@@ -599,8 +583,6 @@ Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_SelectionCaret.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Settings.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Settings.cs.meta
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_ShaderUtilities.cs
-Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_ShaderUtilities.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Sprite.cs
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Sprite.cs.meta
 Project2_IM590/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_SpriteAnimator.cs
